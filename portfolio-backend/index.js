@@ -13,4 +13,8 @@ app.use(cors())
 
 app.use("/api/user",userRouter)
 
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
+
 app.listen(port, () => console.groupCollapsed("Server Stared at port: " + port));
