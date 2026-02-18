@@ -1,0 +1,125 @@
+form {
+  /* height: 5500px; */
+  /* border: 1px solid red; */
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+h3 {
+  color: red;
+  font-size: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+input {
+  outline: none;
+  height: 40px;
+  width: 100%;
+  margin-block: 10px;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding-inline: 4px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+input:focus {
+  border-color: black;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.497);
+}
+
+.btnn {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+.btnn:hover {
+  background-color: #b3b3b5;
+  border-radius: 4px;
+}
+
+div.LoginSignup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  height: 100vh;
+}
+
+div.outer {
+  margin-top: -100px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  padding-inline: 40px;
+  padding-block: 10px;
+}
+
+div.username {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.password {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.email {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 376px) {
+  div.LoginSignup {
+    /* border: 1px solid red; */
+    width: fit-content;
+  }
+
+  div.outer {
+    width: 240px;
+    height: 440px;
+    margin-left: 4px;
+    margin-top: -30px;
+  }
+}

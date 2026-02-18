@@ -1,0 +1,50 @@
+.footer{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 102px;
+    /* border: 1px solid red; */
+    /* background-color: #B3B3B5; */
+    /* width: 100px; */
+    padding: 10px 20px;
+    border-top: 2px solid #B3B3B5;
+    color: black;
+
+}
+
+.dlink{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+button.btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+@media (max-width: 376px) {
+    .footer{
+        flex-direction: column;
+    }
+    button.btn {
+        font-size: 18px;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .dlink{
+        font-size: 18px;
+        gap: 10px;
+    }
+}
