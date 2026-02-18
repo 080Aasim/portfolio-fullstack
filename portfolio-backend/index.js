@@ -17,4 +17,4 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-app.listen(port, () => console.groupCollapsed("Server Stared at port: " + port));
+app.listen(port, () => console.log("Server Stared at port: " + port));
